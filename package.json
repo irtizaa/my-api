@@ -14,7 +14,8 @@
     "express": "^4.17.1",
     "geojson": "^0.5.0",
     "mssql": "^5.1.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "serverless-http": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"

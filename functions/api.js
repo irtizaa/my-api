@@ -18,7 +18,7 @@ const config = {
   port: 1433,
 };
 
-// Function to fetch joints data
+// Fetch joints data
 async function getJointsData(req, res) {
   try {
     let conn = await sql.connect(config);
@@ -40,5 +40,4 @@ async function getJointsData(req, res) {
 
 app.get("/joints", getJointsData);
 
-// Export as a Netlify function
 module.exports.handler = serverless(app);
